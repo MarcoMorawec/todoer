@@ -1,4 +1,9 @@
 Todoer::Application.routes.draw do
+  devise_for :users
+
+  resources :tasks
+
+
   root :to => "page#index"
 
   get "/about" => "page#about"
