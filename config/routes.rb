@@ -4,7 +4,7 @@ Todoer::Application.routes.draw do
   resources :tasks
 
 
-  root :to => "page#index"
+  root :to => "tasks#index"
 
   get "/about" => "page#about"
 
